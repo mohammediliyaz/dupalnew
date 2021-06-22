@@ -1,0 +1,21 @@
+name: mytheme
+type: theme
+description: This is my first theme project for pizza
+core: 8.x
+base theme: stable
+stylesheets-remove:
+  - core/themes/stable/css/system/components/align.module.css
+  - core/themes/stable/css/views/views.module.css
+screenshot: mytheme.png
+regions:
+  header: Header
+  main_navigation: Main Navigation
+  content: Content
+  sidebar_first: Sidebar First
+  footer: Footer
+  page_top: Page Top
+  page_bottom: Page Bottom
+
+libraries:
+  - mytheme/global-css
+  - mytheme/global-js

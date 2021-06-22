@@ -1,0 +1,155 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+.emptysection {
+  height: 20px;
+}
+.bodyContent {
+}
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 1rem;
+  height: auto;
+}
+.header {
+  background-color: white;
+}
+.headerInside {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  justify-content: space-between;
+}
+.brandingName {
+  text-decoration: none;
+  color: rgb(203, 176, 156);
+  font-size: 30px;
+}
+.main_navigation {
+}
+.nav_links {
+  list-style-type: none;
+  display: inline;
+}
+.nav_links > a {
+  text-decoration: none;
+}
+.layout-sidebar-first {
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.myfooter {
+  text-align: center;
+  background-color: white;
+  margin: 1rem;
+  color: #9e9e9e !important;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  grid-row-gap: 1rem;
+}
+.gridtitle {
+  color: #9e9e9e;
+  text-align: center;
+}
+.pizzacard {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 10rem;
+  height: 15rem;
+}
+.imagepizza {
+  margin: 40px auto -30px;
+  display: block;
+  position: relative;
+  top: -30px;
+  right: -35px;
+}
+.cardtitle {
+  font-size: 1.15rem;
+  line-height: 110%;
+  margin: 1.5rem;
+  text-align: center;
+}
+.pizzaingredients * ul {
+  list-style-type: none;
+}
+.moreinfo {
+  text-align: end;
+  margin-left: 4px;
+}
+.moreinfo * a {
+  text-decoration: none;
+
+  color: #cbb09c !important;
+}
+.field_pizza_title {
+  text-align: center;
+  font-size: 1rem;
+  color: #cbb09c !important;
+}
+.field_ingredients {
+  text-align: center;
+}
+
+.field_createdat {
+  text-align: center;
+}
+.field_pizzaimage {
+  text-align: center;
+}
+.pizzas {
+  color: #9e9e9e;
+  text-align: center;
+}
+
+.searchinput {
+  width: 100px;
+  margin: 10px 0 6px 0;
+}
+.pagetitle {
+  color: rgb(203, 176, 156);
+  margin-left: 10px;
+}
+
+/* media queries */
+@media screen and (max-width: 425px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+  }
+  .headerInside {
+    display: flex;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .layout-container {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .layout-container {
+    grid-template-columns: 100%;
+  }
+  .searchinput {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+}

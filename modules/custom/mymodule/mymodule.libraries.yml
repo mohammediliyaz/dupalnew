@@ -1,0 +1,4 @@
+mymodule.style:
+  css:
+    theme:
+      css/styles.css: {}

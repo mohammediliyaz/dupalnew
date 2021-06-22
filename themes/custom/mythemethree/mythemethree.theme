@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ */
+
+ /**
+  *  implementing template_preprocess_views_view_fields()
+  */
+
+ function mythemethree_preprocess_views_view_fields(&$variables){
+     //kint(strip_tags($variables['fields']['field_pizza_title']->content)); die();
+
+ }

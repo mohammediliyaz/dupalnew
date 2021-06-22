@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * @file
+ */
+
+ /**
+  *  implementing template_preprocess_views_view_grid()
+  */
+

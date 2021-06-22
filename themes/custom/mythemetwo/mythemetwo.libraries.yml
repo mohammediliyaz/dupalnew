@@ -1,0 +1,8 @@
+global-js:
+  js:
+    js\materialize.min.js: {}
+
+global-css:
+  css:
+    theme:
+      css/style.css: {}

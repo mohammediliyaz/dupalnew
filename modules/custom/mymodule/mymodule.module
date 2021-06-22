@@ -1,0 +1,35 @@
+<?php
+/**
+ * implementation of hook_form_alter()
+ */
+
+ function mymodule_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+    if($form_id){
+      $form['field_tags']['#access'] = false;
+
+      $form['title']['widget'][0]['value']['#title'] =  t('Article Title');
+     }
+ }
+
+ /**
+  * implememtn hook_theme();
+  */
+
+  function mymodule_theme($existing, $type, $theme, $path){
+
+    return [
+      'mymodule_theme' => [
+        'variables' => ['description'=>''],
+      ],
+      ];
+  }
+
+  /**
+   * implementing hook_entity_presave().
+   *
+   * @param Drupal\Core\Entity\EntityInterface $entity
+   * @return void
+   */
+  function mymodule_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+    //kint($entity->bundle()); die();
+  }

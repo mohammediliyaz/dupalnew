@@ -1,0 +1,5 @@
+name: Custom drush
+type: module
+description: custom drush module
+core: 8.x
+package: drush custom commands

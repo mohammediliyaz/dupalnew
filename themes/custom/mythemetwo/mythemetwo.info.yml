@@ -1,0 +1,21 @@
+name: mythemetwo
+type: theme
+description: This is my second theme project for pizza
+core: 8.x
+base theme: stable
+stylesheets-remove:
+  - core/themes/stable/css/system/components/align.module.css
+  - core/themes/stable/css/views/views.module.css
+
+regions:
+  header: Header
+  main_navigation: Main Navigation
+  content: Content
+  sidebar_first: Sidebar First
+  footer: Footer
+  page_top: Page Top
+  page_bottom: Page Bottom
+
+libraries:
+  - mythemetwo\global-css
+  - mythemetwo\global-js

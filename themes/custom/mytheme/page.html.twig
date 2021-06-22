@@ -1,0 +1,40 @@
+<div class="emptysection"></div>
+
+<div class="bodyContent">
+	<header class="header" role="banner">
+		<div class="headerInside">
+			{{ page.header }}
+			<div class="main_navigation">
+				{{page.main_navigation }}
+			</div>
+		</div>
+
+	</header>
+
+
+	<div class="layout-container">
+		<main class role="main">
+			<a id="main-content" tabindex="-1"></a>
+			{# link is in html.html.twig #}
+
+			<div class="layout-content">
+				{{ page.content }}
+			</div>
+			{# /.layout-content #}
+
+		</main>
+		<div class="sidebar_first">
+			{% if page.sidebar_first %}
+				{{ page.sidebar_first }}
+			{% endif %}
+		</div>
+	</div>
+	{% if page.footer %}
+		<footer class="myfooter" role="contentinfo">
+			{{ page.footer }}
+		</footer>
+	{% endif %}
+</div>
+
+
+{# /.layout-container #}
